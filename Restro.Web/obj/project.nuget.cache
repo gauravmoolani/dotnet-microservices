@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VcKNsHfgEXtRFbOep6FG9UUsFFkrMKpRE8CusZUcSq0cketpSAcZySU2VVDkx8/EmjiNdXc/J9MFAA6j8Gp1gw==",
+  "dgSpecHash": "smEsdH42Q2BNSNJl2lJXynKEBVpwZsYIUNof59t3hww7FafFGzwmlaqQ/La4DTb1TL6JOJ2DqMovs3txq+RFyw==",
   "success": true,
-  "projectFilePath": "D:\\Projs\\Microservice\\RestroRestaurant\\Restro.Web\\Restro.Web.csproj",
+  "projectFilePath": "D:\\Projs\\dotnet-microservices\\Restro.Web\\Restro.Web.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projs\\Microservice\\RestroRestaurant\\Restro.Web\\Restro.Web.csproj",
+      "projectUniqueName": "D:\\Projs\\dotnet-microservices\\Restro.Web\\Restro.Web.csproj",
       "projectName": "Restro.Web",
-      "projectPath": "D:\\Projs\\Microservice\\RestroRestaurant\\Restro.Web\\Restro.Web.csproj",
+      "projectPath": "D:\\Projs\\dotnet-microservices\\Restro.Web\\Restro.Web.csproj",
       "packagesPath": "C:\\Users\\gaurav\\.nuget\\packages\\",
-      "outputPath": "D:\\Projs\\Microservice\\RestroRestaurant\\Restro.Web\\obj\\",
+      "outputPath": "D:\\Projs\\dotnet-microservices\\Restro.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

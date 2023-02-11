@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Restro.Services.ProductAPI/Program.cs
+/Restro.Services.ProductAPI/bin/Debug/net6.0
+/.vs/dotnet-microservices/v17
+/.vs/ProjectEvaluation
+/.vs/RestroRestaurant
+/Restro.Web/bin/Debug/net6.0
+/Restro.Web/obj/Debug/net6.0

@@ -7,9 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{38
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{44493B49-5640-493E-A5CA-D8DD47C3C885}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restro.Web", "Restro.Web\Restro.Web.csproj", "{60177FDA-BCDC-410E-9BAE-DBC98D44E3C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Restro.Web", "Restro.Web\Restro.Web.csproj", "{60177FDA-BCDC-410E-9BAE-DBC98D44E3C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restro.Services.ProductAPI", "Restro.Services.ProductAPI\Restro.Services.ProductAPI.csproj", "{6569424C-C19F-452A-A5D9-F4D1A8B49D03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Restro.Services.ProductAPI", "Restro.Services.ProductAPI\Restro.Services.ProductAPI.csproj", "{6569424C-C19F-452A-A5D9-F4D1A8B49D03}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
