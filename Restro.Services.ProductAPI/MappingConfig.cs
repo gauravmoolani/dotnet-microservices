@@ -13,7 +13,7 @@ namespace Restro.Services.ProductAPI
                 config.CreateMap<ProductDto, Product>();
                 config.CreateMap<Product , ProductDto>();
             });
-
+            return mappingConfig;
         }
 
     }

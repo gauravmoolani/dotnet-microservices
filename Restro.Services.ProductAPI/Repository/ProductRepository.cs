@@ -1,37 +1,67 @@
 ﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using Restro.Services.ProductAPI.DbContexts;
+using Restro.Services.ProductAPI.Models;
 using Restro.Services.ProductAPI.Models.Dto;
 
 namespace Restro.Services.ProductAPI.Repository
 {
     public class ProductRepository : IProductRepository
     {
-        private readonly ApplicationDbContext _context;
+        private readonly ApplicationDbContext _db;
         private readonly IMapper _mapper;
         public ProductRepository(ApplicationDbContext applicationDbContext , IMapper mapper)
         {
-            _context = applicationDbContext;
+            _db = applicationDbContext;
             _mapper = mapper;
 
         }
-        public Task<ProductDto> CreateUpdateProduct(ProductDto productDto)
+        public async Task<ProductDto> CreateUpdateProduct(ProductDto productDto)
         {
-            throw new NotImplementedException();
+            Product product = _mapper.Map<ProductDto, Product>(productDto);
+            if(product.ProductId > 0)
+            {
+                _db.Products.Update(product);
+            }
+            else
+            {
+                _db.Products.Add(product);
+            }
+            await _db.SaveChangesAsync();
+            return _mapper.Map<Product, ProductDto>(product);
         }
 
-        public Task<bool> DeleteProduct(int productid)
+        public async Task<bool> DeleteProduct(int productid)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Product product = await _db.Products.FirstOrDefaultAsync(x => x.ProductId == productid);
+                if (product == null)
+                {
+                    return false;
+                }
+                _db.Products.Remove(product);
+                await _db.SaveChangesAsync();
+                return true;
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
-        public Task<ProductDto> GetproductById(int productid)
+        public async Task<ProductDto> GetproductById(int productid)
         {
-            throw new NotImplementedException();
+            Product product = await _db.Products.Where(x=>x.ProductId == productid).FirstOrDefaultAsync();
+            return _mapper.Map<ProductDto>(product);
         }
 
-        public Task<IEnumerable<ProductDto>> Getproducts()
+        public async Task<IEnumerable<ProductDto>> Getproducts()
         {
-            List<ProductDto> products= 
+            List<Product> productList = await _db.Products.ToListAsync();
+            return _mapper.Map<List<ProductDto>>(productList);
         }
     }
 }
